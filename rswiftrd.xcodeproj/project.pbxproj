@@ -16,6 +16,7 @@
 		6AB25C722443EB8A009981E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB25C702443EB8A009981E2 /* Main.storyboard */; };
 		6AB25C742443EB90009981E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB25C732443EB90009981E2 /* Assets.xcassets */; };
 		6AB25C772443EB90009981E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB25C752443EB90009981E2 /* LaunchScreen.storyboard */; };
+		6AB25C7D2444010F009981E2 /* testingrd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB25C7C2444010F009981E2 /* testingrd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		6AB25C732443EB90009981E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AB25C762443EB90009981E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AB25C782443EB90009981E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB25C7C2444010F009981E2 /* testingrd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingrd.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				6AB25C4D2443E997009981E2 /* rswiftrd.h */,
 				6AB25C4E2443E997009981E2 /* Info.plist */,
+				6AB25C7C2444010F009981E2 /* testingrd.swift */,
 			);
 			path = rswiftrd;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					6AB25C492443E997009981E2 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					6AB25C522443E997009981E2 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB25C7D2444010F009981E2 /* testingrd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		6AB25C5F2443E997009981E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = galtek.rswiftrd;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		6AB25C602443E997009981E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
@@ -485,6 +493,7 @@
 		6AB25C622443E997009981E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
 				INFOPLIST_FILE = rswiftrdTests/Info.plist;
@@ -503,6 +512,7 @@
 		6AB25C632443E997009981E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTSUT4VG35;
 				INFOPLIST_FILE = rswiftrdTests/Info.plist;
